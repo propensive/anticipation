@@ -21,4 +21,4 @@ trait HttpResponse[T]:
   def content(value: T): LazyList[IArray[Byte]]
 
 trait HttpReader[T, E <: Exception]:
-  def read(value: String): T throws E
+  def read(value: String): T
